@@ -1,0 +1,8 @@
+@use "@/sass/colors";
+
+.title {
+  font-weight: 700;
+  font-size: 2rem;
+  color: colors.$accent;
+  text-align: center;
+}

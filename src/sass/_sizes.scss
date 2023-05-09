@@ -1,0 +1,7 @@
+$page: calc(1440rem / 16);
+$mobile: calc(600rem / 16);
+
+@mixin pageContainer {
+  max-width: $page;
+  margin: auto;
+}

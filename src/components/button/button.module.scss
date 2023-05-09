@@ -1,0 +1,28 @@
+@use "@/sass/colors";
+@use "@/sass/effects";
+
+.button {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.5rem;
+  border-radius: 1rem;
+  background: colors.$overlay-1;
+  font-weight: 500;
+  font-size: 1.125rem;
+  color: colors.$accent;
+  cursor: pointer;
+  transition: effects.$transition-fast;
+  transition-property: all;
+
+  &:hover {
+    background: colors.$overlay-2;
+    transform: translateY(-0.125rem) scale(1.025);
+  }
+
+  &:active {
+    background: colors.$overlay-3;
+    transform: translateY(-0.06125rem) scale(0.9875);
+  }
+}
